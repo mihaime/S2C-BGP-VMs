@@ -369,7 +369,7 @@ resource "aviatrix_site2cloud" "Conn4" {
   tunnel_type                = "route"
   primary_cloud_gateway_name = aviatrix_gateway.gw_2.gw_name
   remote_gateway_ip          = module.mc-spoke-3.spoke_gateway.eip
-  remote_subnet_cidr         = "10.10.160.0/23"
+  remote_subnet_cidr         = "10.10.170.0/23"
   pre_shared_key             = "12345678"
   ha_enabled                 = true
   backup_gateway_name        = aviatrix_gateway.gw_2.peering_ha_gw_name
